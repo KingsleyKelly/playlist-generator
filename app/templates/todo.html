@@ -38,8 +38,13 @@
       function onPlayerStateChange(event) {
         if (event.data == YT.PlayerState.PLAYING && !done) {
           var videos = ['XvDLutxjtWI', 'IIZGtDHfFNI'];
-          for (var video = 0; video < videos.length; video++){ 
-            setInterval(changeVideo, 6000, videos[video]);
+          for (var video = 0; video < videos.length; video++){
+            if(video==0){
+              setTimeout(changeVideo, 6000, videos[video]);
+            };
+            if(video==1){
+              setTimeout(changeVideo, 12000, videos[video]);
+            };
           };
           done = true;
         }
