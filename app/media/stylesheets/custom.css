@@ -1,0 +1,16 @@
+.task form {
+  margin-bottom: 0;
+}
+.task input[type='checkbox'] {
+  height: 30px;
+  width: 30px;
+}
+td {
+  font-size: 20px;
+}
+.delete-task {
+  opacity: 0.0;
+}
+.task:hover .delete-task {
+  opacity: 1;
+}
