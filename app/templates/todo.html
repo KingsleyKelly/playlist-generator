@@ -1,5 +1,14 @@
 <head>
-  <script type="text/javascript" src="swfobject.js"></script>   
+  <script type="text/javascript" src="swfobject.js"></script> 
+  <script type="text/javascript">
+  
+
+  var params = { allowScriptAccess: "always" };
+  var atts = { id: "myytplayer" };
+  swfobject.embedSWF("http://www.youtube.com/v/BptQHAW2T5M?enablejsapi=1&playerapiid=ytplayer&version=3",
+                     "ytapiplayer", "425", "356", "8", null, null, params, atts);
+
+</script>  
   <script type="text/javascript">
     function onYouTubePlayerReady(playerId) {
       ytplayer = document.getElementById("myytplayer");
@@ -17,14 +26,6 @@
   <a href="javascript:void(0);" onclick="play();">Play</a>
 </div>
 
-<script type="text/javascript">
-  
 
-  var params = { allowScriptAccess: "always" };
-  var atts = { id: "myytplayer" };
-  swfobject.embedSWF("http://www.youtube.com/v/BptQHAW2T5M?enablejsapi=1&playerapiid=ytplayer&version=3",
-                     "ytapiplayer", "425", "356", "8", null, null, params, atts);
-
-</script>
 
 </body>
