@@ -37,7 +37,10 @@
       var done = false;
       function onPlayerStateChange(event) {
         if (event.data == YT.PlayerState.PLAYING && !done) {
-          setTimeout(changeVideo, 6000, 'XvDLutxjtWI');
+          var videos = ['XvDLutxjtWI', 'IIZGtDHfFNI'];
+          for (var video = 0; video < videos.length; video++){ 
+            setTimeout(changeVideo, 6000, videos[video]);
+          };
           done = true;
         }
       }
