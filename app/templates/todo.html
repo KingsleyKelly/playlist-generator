@@ -1,19 +1,13 @@
-<head>
-<script language='JavaScript'>
-  var previous = 'H25FlBy9KDw';
-  var current = 'v=O4-6Y_91v5I';
-  var next = 'l8SYfPMknpQ';
+  <script type="text/javascript" src="swfobject.js"></script>    
+  <div id="ytapiplayer">
+    You need Flash player 8+ and JavaScript enabled to view this video.
+  </div>
 
-  function changeTrack(new_track){
-    document.getElementbyId['iframe'].src = "https:https://www.youtube.com/embed/" + previous + "autoplay=1#t=45";
-  };
+  <script type="text/javascript">
 
-</script>
-</head>
-<body>
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/sE5BXbfZe5w?rel=0&autoplay=1#t=45" frameborder="0" allowfullscreen></iframe>
+    var params = { allowScriptAccess: "always" };
+    var atts = { id: "myytplayer" };
+    swfobject.embedSWF("http://www.youtube.com/v/VIDEO_ID?enablejsapi=1&playerapiid=ytplayer&version=3",
+                       "ytapiplayer", "425", "356", "8", null, null, params, atts);
 
-<button type="button" onclick="changeTrack(previous)">Previous</button>
-<button onclick="changeTrack(current)">Repeat</pbutton>
-<button onclick="changeTrack(next)">Next</button>
-</body>
+  </script>
