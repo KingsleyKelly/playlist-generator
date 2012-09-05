@@ -37,11 +37,11 @@
       var done = false;
       function onPlayerStateChange(event) {
         if (event.data == YT.PlayerState.PLAYING && !done) {
-          setTimeout(stopVideo, 6000);
+          setTimeout(changeVideo, 6000);
           done = true;
         }
       }
-      function stopVideo() {
+      function changeVideo() {
         player.cueVideoById('XvDLutxjtWI', null, null);
         player.playVideo()
       }
