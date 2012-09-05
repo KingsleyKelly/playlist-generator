@@ -1,31 +1,12 @@
-<head>
-  <script type="text/javascript" src="swfobject.js"></script> 
-  <script type="text/javascript">
-  
+<script type="text/javascript" src="swfobject.js"></script>    
+<div id="ytapiplayer">
+  You need Flash player 8+ and JavaScript enabled to view this video.
+</div>
+
+<script type="text/javascript">
 
   var params = { allowScriptAccess: "always" };
   var atts = { id: "myytplayer" };
-  swfobject.embedSWF("http://www.youtube.com/v/BptQHAW2T5M?enablejsapi=1&playerapiid=ytplayer&version=3",
+  swfobject.embedSWF("http://www.youtube.com/v/zxeQ85PYChc?enablejsapi=1&playerapiid=ytplayer&version=3",
                      "ytapiplayer", "425", "356", "8", null, null, params, atts);
-
-</script>  
-  <script type="text/javascript">
-    function onYouTubePlayerReady(playerId) {
-      ytplayer = document.getElementById("myytplayer");
-    } 
-
-    function play() {
-  if (ytplayer) {
-    ytplayer.playVideo();
-  }
-}
-  </script>
-<body>
-<div id="ytapiplayer">
-  You need Flash player 8+ and JavaScript enabled to view this video.
-  <a href="javascript:void(0);" onclick="play();">Play</a>
-</div>
-
-
-
-</body>
+</script>
