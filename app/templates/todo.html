@@ -61,13 +61,16 @@
 
       function nextVideo(){
         console.log(videoNumber);
-        changeVideo(videos[videoNumber++]);
+        videoNumber++;
         console.log(videoNumber);
+        changeVideo(videos[videoNumber]);
+        
       }
 
       function previousVideo(){
         console.log(videoNumber);
-        changeVideo(videos[videoNumber--]);
+        videoNumber--;
+        changeVideo(videos[videoNumber]);
         console.log(videoNumber);
       }
     </script>
