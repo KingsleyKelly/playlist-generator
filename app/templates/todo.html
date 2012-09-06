@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <script language='JavaScript'>
+    function resetVideos() {
+      var player = getElementById('player');
+      player.changeVideo(videos[0]);
+    };
+    </script>
+
+  </head>
   <body>
     <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
     <div id="player"></div>
@@ -54,6 +63,6 @@
 
     </script>
 
-    <button onclick="player.changeVideo(videos[0])">GANGNAM STYLE</button>
+    <button onclick="resetVideos();">GANGNAM STYLE</button>
   </body>
 </html>
