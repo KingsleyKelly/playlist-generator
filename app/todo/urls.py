@@ -6,5 +6,4 @@ admin.autodiscover()
 
 urlpatterns = patterns('todo.views',
     url(r'^/?$', 'index', name='index'),
-    
 )
