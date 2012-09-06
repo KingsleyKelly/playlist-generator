@@ -58,17 +58,17 @@
       }
 
       function nextVideo(){
-        if (videoNumber!=(videos.length -1)){
-          videoNumber++;
-        }else{
-          videoNumber = 0;
-        };
+        // if (videoNumber < videos.length) {
+        //   videoNumber++;
+        // }else{
+        //   videoNumber = 0;
+        // };
         changeVideo(videos[videoNumber]);
         
       }
 
       function previousVideo(){
-        if (videoNumber!=0){
+        if (videoNumber > 0){
           videoNumber--;
         }else{
           videoNumber = (videos.length -1));
