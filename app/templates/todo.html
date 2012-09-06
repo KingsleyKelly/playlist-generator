@@ -36,11 +36,10 @@
       
       function onPlayerStateChange(event) {
         if (event.data == YT.PlayerState.ENDED) {
-          if (videoNumber != ( videos.length - 1)){
+          if (videoNumber < ( videos.length - 1)){
             nextVideo();
           } else {
             resetVideos;
-            videoNumber = 0;
           } 
         }
       }
@@ -50,7 +49,8 @@
       }
 
       function resetVideos() {
-        changeVideo(videos[0]);
+        videoNumber = 0;
+        changeVideo(videoNumber);
       }
 
       function repeatVideo(){
