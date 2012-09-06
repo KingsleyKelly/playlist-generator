@@ -6,16 +6,7 @@
       var player = document.getElementById('player');
       changeVideo(videos[0]);
     };
-    </script>
-
-  </head>
-  <body>
-    <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
-    <div id="player"></div>
-
-    <script>
-      // 2. This code loads the IFrame Player API code asynchronously.
-      var tag = document.createElement('script');
+    var tag = document.createElement('script');
       tag.src = "//www.youtube.com/iframe_api";
       var firstScriptTag = document.getElementsByTagName('script')[0];
       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
@@ -60,6 +51,16 @@
         player.cueVideoById(video, null, null);
         player.playVideo()
       }
+    </script>
+
+  </head>
+  <body>
+    <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+    <div id="player"></div>
+
+    <script>
+      // 2. This code loads the IFrame Player API code asynchronously.
+      
 
     </script>
 
