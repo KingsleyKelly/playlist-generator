@@ -54,22 +54,25 @@
       }
 
       function repeatVideo(){
-        console.log(videoNumber);
         changeVideo(videos[videoNumber]);
-        console.log(videoNumber);
       }
 
       function nextVideo(){
-        console.log(videoNumber);
-        videoNumber++;
-        console.log(videoNumber);
+        if (videoNumber!=(videos.length -1)){
+          videoNumber++;
+        }else{
+          videoNumber = 0;
+        }
         changeVideo(videos[videoNumber]);
         
       }
 
       function previousVideo(){
-        console.log(videoNumber);
-        videoNumber--;
+        if (videoNumber!=0){
+          videoNumber--;
+        }else{
+          videoNumber = (videos.length -1));
+        }
         changeVideo(videos[videoNumber]);
         console.log(videoNumber);
       }
