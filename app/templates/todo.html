@@ -11,6 +11,7 @@
       var firstScriptTag = document.getElementsByTagName('script')[0];
       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
       var videos = ['XvDLutxjtWI', 'IIZGtDHfFNI'];
+      var videoNumber = 0;
 
       // 3. This function creates an <iframe> (and YouTube player)
       //    after the API code downloads.
@@ -38,9 +39,12 @@
       
       function onPlayerStateChange(event) {
         if (event.data == YT.PlayerState.PAUSED) {
-          
-          changeVideo(videos[0]);
-          
+          if (videoNumber!= (videos.length -1){
+            changeVideo(videos[videoNumber++]);
+          } else {
+            videoNumber = 0;
+            changeVideo(videos[videoNumber])
+          } 
         }
       }
       function changeVideo(video) {
