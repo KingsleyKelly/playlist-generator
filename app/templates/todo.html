@@ -38,7 +38,7 @@
       //    the player should play for six seconds and then stop.
       
       function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.PAUSED) {
+        if (event.data == YT.PlayerState.PAUSED || event.data == YT.PlayerState.ENDED) {
           if (videoNumber != ( videos.length - 1)){
             changeVideo(videos[videoNumber++]);
           } else {
@@ -54,6 +54,6 @@
 
     </script>
 
-    <button onclick="player.pauseVideo">GANGNAM STYLE</button>
+    <button onclick="player.changeVideo(videos[0])">GANGNAM STYLE</button>
   </body>
 </html>
