@@ -2,15 +2,12 @@
 <html>
   <head>
     <script language='JavaScript'>
-    function resetVideos() {
-      var player = document.getElementById('player');
-      changeVideo(videos[0]);
-    };
+    
     var tag = document.createElement('script');
       tag.src = "//www.youtube.com/iframe_api";
       var firstScriptTag = document.getElementsByTagName('script')[0];
       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-      var videos = ['XvDLutxjtWI', 'IIZGtDHfFNI', 'HL3DZ-YDSfw'];
+      var videos = ['HL3DZ-YDSfw', 'XvDLutxjtWI', 'IIZGtDHfFNI'];
       var videoNumber = 0;
 
       // 3. This function creates an <iframe> (and YouTube player)
@@ -38,11 +35,11 @@
       //    the player should play for six seconds and then stop.
       
       function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.PAUSED || event.data == YT.PlayerState.ENDED) {
+        if (event.data == YT.PlayerState.ENDED) {
           if (videoNumber != ( videos.length - 1)){
-            changeVideo(videos[videoNumber++]);
+            nextVideo();
           } else {
-            changeVideo(videos[videoNumber])
+            resetVideos;
             videoNumber = 0;
           } 
         }
@@ -51,19 +48,26 @@
         player.cueVideoById(video, null, null);
         player.playVideo()
       }
+
+      function resetVideos() {
+        changeVideo(videos[0]);
+      }
+
+      function repeatVideos(){
+        changeVideo(videos[videoNumber]);
+      }
+
+      function nextVideo(){
+        changeVideo(videos[videoNumber++])
+      }
     </script>
 
   </head>
   <body>
     <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
     <div id="player"></div>
-
-    <script>
-      // 2. This code loads the IFrame Player API code asynchronously.
-      
-
-    </script>
-
-    <button onclick="resetVideos();">GANGNAM STYLE</button>
+    <div id="buttons">
+      <button onclick="resetVideos();">First</button>
+      <button onclick=""
   </body>
 </html>
