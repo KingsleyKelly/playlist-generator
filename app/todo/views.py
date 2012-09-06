@@ -7,7 +7,7 @@ from django.template import defaultfilters
 
 @csrf_protect
 def index(request):
-    tracks = Tracks.objects.all()
+    tracks = Track.objects.all()
     return render(request, 'todo.html', {'tasks': tasks})
         
 
