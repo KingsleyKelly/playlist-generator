@@ -58,11 +58,11 @@
       }
 
       function nextVideo(){
-        // if (videoNumber < videos.length) {
-        //   videoNumber++;
-        // }else{
-        //   videoNumber = 0;
-        // };
+        if (videoNumber < videos.length) {
+          videoNumber++;
+        }else{
+          videoNumber = 0;
+        };
         changeVideo(videos[videoNumber]);
         
       }
