@@ -6,7 +6,7 @@ from django.shortcuts import render_to_response, render
 from django.template import defaultfilters
 from django.utils import simplejson
 
-@csrf_protect
+# @csrf_protect
 def index(request):
     tracks = [track.youtube_id for track in Track.objects.all()]
     # json_tracks = simplejson.dumps(tracks)
