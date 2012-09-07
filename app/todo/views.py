@@ -7,7 +7,8 @@ from django.template import defaultfilters
 
 @csrf_protect
 def index(request):
-    tracks = Track.objects.all()
+    tracks = [track.youtube_id for track in Track.objects.all()]
+
     return render(request, 'todo.html', {'tracks': tracks})
         
 
