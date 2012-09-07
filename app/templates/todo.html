@@ -8,6 +8,7 @@
       var firstScriptTag = document.getElementsByTagName('script')[0];
       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
       var videos = {{tracks|safe}};
+      var repeat = false; 
 
       var videoNumber = 0;
 
@@ -30,7 +31,10 @@
       }
       
       function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.ENDED) {
+        if (repeat === true && event.data === YT.PlayerState.ENDED) {
+          repeatVideo();
+        }
+        else if (event.data === YT.PlayerState.ENDED) {
           nextVideo();
         }
       }
@@ -68,6 +72,14 @@
         changeVideo(videos[videoNumber]);
         
       }
+
+      function autoRepeat(){
+        if (repeat === true){
+          repeat = false;
+        } else {
+          repeat = true;
+        }
+      }
     </script>
 
   </head>
@@ -79,5 +91,6 @@
       <button onclick="previousVideo();">Previous</button>
       <button onclick="repeatVideo();">Repeat</button>
       <button onclick="nextVideo();">Next</button>
+      <checkbox onPropertyChange="autoRepeat();">Repeat</checkbox>
   </body>
 </html>
