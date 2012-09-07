@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from models import *
 from django.http import HttpResponse, HttpResponseRedirect
 from django.template import RequestContext
