@@ -9,12 +9,11 @@ from django.utils import simplejson
 @csrf_protect
 def index(request):
     youtube_ids = [track.youtube_id for track in Track.objects.all()]
-    artists = [track.artist_name for track in Track.objects.all()]
-    track_names = [track.track_name for track in Track.objects.all()]
+    full_tracks = Tracks.objects.all()
     print track_names
     artists_with_track_names = zip(artists, track_names)
     print artists_with_track_names
-    json_artists_with_tracks = simplejson.dumps(artists_with_track_names) 
+    json_artists_with_tracks = simplejson.dumps(full_tracks) 
     json_youtube_ids = simplejson.dumps(youtube_ids)
     return render(request, 'todo.html', 
                             {'tracks': json_youtube_ids,
