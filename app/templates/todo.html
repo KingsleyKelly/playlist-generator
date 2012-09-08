@@ -44,8 +44,8 @@
       }
 
       function playButton(rank) {
-        rank = rank -1
-        video = videos[rank]
+        videoNumber = rank -1
+        video = videos[videoNumber]
         player.cueVideoById(video, null, null);
         player.playVideo()
       }
