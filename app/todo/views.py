@@ -14,7 +14,11 @@ def index(request):
     artists_with_track_names = zip(artists, track_names)
     json_artists_with_tracks = simplejson.dumps(artists_with_track_names) 
     json_youtube_ids = simplejson.dumps(youtube_ids)
-    return render(request, 'todo.html', {'tracks': json_youtube_ids})
+    return render(request, 'todo.html', 
+                            {'tracks': json_youtube_ids,
+                             'artists_with_tracks': json_artists_with_tracks})
+
+
         
 
         
