@@ -45,7 +45,7 @@
 
       function resetVideos() {
         videoNumber = 0;
-        changeVideo(videoNumber);
+        changeVideo(videos[0]);
       }
 
       function repeatVideo(){
@@ -91,8 +91,16 @@
       <button onclick="previousVideo();">Previous</button>
       <button onclick="repeatVideo();">Repeat</button>
       <button onclick="nextVideo();">Next</button>
+    </div>
       <form>
         <input type="checkbox" onclick="autoRepeat();">Repeat
       </form>
+    <div id="playlist">
+      <table>
+        {% for artist_plus_track in json_artists_with_tracks %}
+          <td>{{ artist_plus_track[0] }} : {{ artist_plus_track[1] }}</td>
+        {% endfor %}
+      </table>
+    </div>
   </body>
 </html>
