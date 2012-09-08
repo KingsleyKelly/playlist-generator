@@ -10,9 +10,7 @@ from django.utils import simplejson
 def index(request):
     youtube_ids = [track.youtube_id for track in Track.objects.all()]
     full_tracks = Track.objects.all()
-    print track_names
     artists_with_track_names = zip(artists, track_names)
-    print artists_with_track_names
     json_artists_with_tracks = simplejson.dumps(full_tracks) 
     json_youtube_ids = simplejson.dumps(youtube_ids)
     return render(request, 'todo.html', 
