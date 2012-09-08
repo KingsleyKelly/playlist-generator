@@ -99,7 +99,7 @@
       <table>
         <td>
         {% for track_info in artists_with_tracks %}
-          <tr>{{track_info.rank}}. {{ track_info.artist_name|safe }} : {{ track_info.track_name}}</tr></br>
+          <tr>{{track_info.rank}}. {{ track_info.artist_name|safe }} : {{ track_info.track_name|safe}} <button onclick="changeVideo(videos[{{track_info.rank}}]);">Play</button></tr></br>
         {% endfor %}
         <td>
       </table>
