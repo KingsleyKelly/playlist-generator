@@ -98,7 +98,7 @@
     <div id="playlist">
       <table>
         {% for artist_plus_track in artists_with_tracks %}
-          <td>{{ artist_plus_track.0 }} : {{ artist_plus_track.1 }}</td>
+          <td>{{ artist_plus_track.0|safe }} : {{ artist_plus_track.1|safe }}</td>
         {% endfor %}
       </table>
     </div>
