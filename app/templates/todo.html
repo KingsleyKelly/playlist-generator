@@ -99,7 +99,7 @@
       <table>
         <td>
         {% for artist_plus_track in artists_with_tracks %}
-          <tr>{{ artist_plus_track.0|safe }} {{ artist_plus_track.1|safe }}</tr></br>
+          <tr>{{ artist_plus_track|safe }}</tr></br>
         {% endfor %}
         <td>
       </table>
