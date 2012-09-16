@@ -1,10 +1,18 @@
 [
 {
+  "model": "todo.playlist",
+  "pk": 1,
+  "fields":{
+    "name": "Top40"
+  }
+},
+
+{
     
-    "model": "todo.playlist.track",
+    "model": "todo.track",
     "pk": "1",
     "fields":{
-      "playlist": 1,
+      "playlist": "1",
       "rank": "1",
       "youtube_id": "mk48xRzuNvA",
       "artist_name": "The Script",
@@ -13,10 +21,10 @@
   },
 {
     
-    "model": "todo.playlist.track",
+    "model": "todo.track",
     "pk": "2",
     "fields":{
-      "playlist": 1,
+      "playlist": "1",
       "rank": "2",
       "youtube_id": "zvpeBPxyZAY",
       "artist_name": "Amelia Lily",
@@ -25,10 +33,10 @@
   },
 {
     
-    "model": "todo.playlist.track",
+    "model": "todo.track",
     "pk": "3",
     "fields":{
-      "playlist": 1,
+      "playlist": "1",
       "rank": "3",
       "youtube_id": "crrOl0egI00",
       "artist_name": "Ne-Yo",
@@ -37,10 +45,10 @@
   },
 {
     
-    "model": "todo.playlist.track",
+    "model": "todo.track",
     "pk": "4",
     "fields":{
-      "playlist": 1,
+      "playlist": "1",
       "rank": "4",
       "youtube_id": "cOQDsmEqVt8",
       "artist_name": "Little Mix",
@@ -49,10 +57,10 @@
   },
 {
     
-    "model": "todo.playlist.track",
+    "model": "todo.track",
     "pk": "5",
     "fields":{
-      "playlist": 1,
+      "playlist": "1",
       "rank": "5",
       "youtube_id": "3jNlIGDRkvQ",
       "artist_name": "P!nk",
@@ -61,10 +69,10 @@
   },
 {
     
-    "model": "todo.playlist.track",
+    "model": "todo.track",
     "pk": "6",
     "fields":{
-      "playlist": 1,
+      "playlist": "1",
       "rank": "6",
       "youtube_id": "TQaK5FsGKHI",
       "artist_name": "Flo Rida",
@@ -73,10 +81,10 @@
   },
 {
     
-    "model": "todo.playlist.track",
+    "model": "todo.track",
     "pk": "7",
     "fields":{
-      "playlist": 1,
+      "playlist": "1",
       "rank": "7",
       "youtube_id": "WA4iX5D9Z64",
       "artist_name": "Taylor Swift",
@@ -85,10 +93,10 @@
   },
 {
     
-    "model": "todo.playlist.track",
+    "model": "todo.track",
     "pk": "8",
     "fields":{
-      "playlist": 1,
+      "playlist": "1",
       "rank": "8",
       "youtube_id": "H7HmzwI67ec",
       "artist_name": "Owl City &amp; Carly Rae Jepsen",
@@ -97,10 +105,10 @@
   },
 {
     
-    "model": "todo.playlist.track",
+    "model": "todo.track",
     "pk": "9",
     "fields":{
-      "playlist": 1,
+      "playlist": "1",
       "rank": "9",
       "youtube_id": "Qsy7kJyizoc",
       "artist_name": "Sam and The Womp",
@@ -109,10 +117,10 @@
   },
 {
     
-    "model": "todo.playlist.track",
+    "model": "todo.track",
     "pk": "10",
     "fields":{
-      "playlist": 1,
+      "playlist": "1",
       "rank": "10",
       "youtube_id": "qQkBeOisNM0",
       "artist_name": "fun.",
@@ -121,10 +129,10 @@
   },
 {
     
-    "model": "todo.playlist.track",
+    "model": "todo.track",
     "pk": "11",
     "fields":{
-      "playlist": 1,
+      "playlist": "1",
       "rank": "11",
       "youtube_id": "kVPjldfJ9rM",
       "artist_name": "Tulisa",
@@ -133,10 +141,10 @@
   },
 {
     
-    "model": "todo.playlist.track",
+    "model": "todo.track",
     "pk": "12",
     "fields":{
-      "playlist": 1,
+      "playlist": "1",
       "rank": "12",
       "youtube_id": "m7zWtQagdMY",
       "artist_name": "Gerry &amp; The Pacemakers",
@@ -145,10 +153,10 @@
   },
 {
     
-    "model": "todo.playlist.track",
+    "model": "todo.track",
     "pk": "13",
     "fields":{
-      "playlist": 1,
+      "playlist": "1",
       "rank": "13",
       "youtube_id": "qr1bkbWKevE",
       "artist_name": "Cheryl",
@@ -157,10 +165,10 @@
   },
 {
     
-    "model": "todo.playlist.track",
+    "model": "todo.track",
     "pk": "14",
     "fields":{
-      "playlist": 1,
+      "playlist": "1",
       "rank": "14",
       "youtube_id": "iwear1kxxuY",
       "artist_name": "David Guetta",
@@ -169,10 +177,10 @@
   },
 {
     
-    "model": "todo.playlist.track",
+    "model": "todo.track",
     "pk": "15",
     "fields":{
-      "playlist": 1,
+      "playlist": "1",
       "rank": "15",
       "youtube_id": "dOOxlVUC08Q",
       "artist_name": "Rita Ora",
@@ -181,10 +189,10 @@
   },
 {
     
-    "model": "todo.playlist.track",
+    "model": "todo.track",
     "pk": "16",
     "fields":{
-      "playlist": 1,
+      "playlist": "1",
       "rank": "16",
       "youtube_id": "pCx5Std7mCo",
       "artist_name": "Public Enemy",
@@ -193,10 +201,10 @@
   },
 {
     
-    "model": "todo.playlist.track",
+    "model": "todo.track",
     "pk": "17",
     "fields":{
-      "playlist": 1,
+      "playlist": "1",
       "rank": "17",
       "youtube_id": "rGKfrgqWcv0",
       "artist_name": "Mumford &amp; Sons",
@@ -205,10 +213,10 @@
   },
 {
     
-    "model": "todo.playlist.track",
+    "model": "todo.track",
     "pk": "18",
     "fields":{
-      "playlist": 1,
+      "playlist": "1",
       "rank": "18",
       "youtube_id": "TMbyWSGYUgc",
       "artist_name": "The Killers",
@@ -217,10 +225,10 @@
   },
 {
     
-    "model": "todo.playlist.track",
+    "model": "todo.track",
     "pk": "19",
     "fields":{
-      "playlist": 1,
+      "playlist": "1",
       "rank": "19",
       "youtube_id": "eFXRQKYFbXE",
       "artist_name": "Emeli Sandé",
@@ -229,10 +237,10 @@
   },
 {
     
-    "model": "todo.playlist.track",
+    "model": "todo.track",
     "pk": "20",
     "fields":{
-      "playlist": 1,
+      "playlist": "1",
       "rank": "20",
       "youtube_id": "ghb6eDopW8I",
       "artist_name": "Of Monsters and Men",
@@ -241,10 +249,10 @@
   },
 {
     
-    "model": "todo.playlist.track",
+    "model": "todo.track",
     "pk": "21",
     "fields":{
-      "playlist": 1,
+      "playlist": "1",
       "rank": "21",
       "youtube_id": "O4-6Y_91v5I",
       "artist_name": "Florence + the Machine",
@@ -253,10 +261,10 @@
   },
 {
     
-    "model": "todo.playlist.track",
+    "model": "todo.track",
     "pk": "22",
     "fields":{
-      "playlist": 1,
+      "playlist": "1",
       "rank": "22",
       "youtube_id": "ahhjdb-sVqk",
       "artist_name": "David Guetta",
@@ -265,10 +273,10 @@
   },
 {
     
-    "model": "todo.playlist.track",
+    "model": "todo.track",
     "pk": "23",
     "fields":{
-      "playlist": 1,
+      "playlist": "1",
       "rank": "23",
       "youtube_id": "qimiWfZAtXw",
       "artist_name": "Wiley",
@@ -277,10 +285,10 @@
   },
 {
     
-    "model": "todo.playlist.track",
+    "model": "todo.track",
     "pk": "24",
     "fields":{
-      "playlist": 1,
+      "playlist": "1",
       "rank": "24",
       "youtube_id": "q66v9kv1F24",
       "artist_name": "Otto Knows",
@@ -289,10 +297,10 @@
   },
 {
     
-    "model": "todo.playlist.track",
+    "model": "todo.track",
     "pk": "25",
     "fields":{
-      "playlist": 1,
+      "playlist": "1",
       "rank": "25",
       "youtube_id": "5FlQSQuv_mg",
       "artist_name": "Maroon 5",
@@ -301,10 +309,10 @@
   },
 {
     
-    "model": "todo.playlist.track",
+    "model": "todo.track",
     "pk": "26",
     "fields":{
-      "playlist": 1,
+      "playlist": "1",
       "rank": "26",
       "youtube_id": "CwZ_bmNbdAw",
       "artist_name": "Simple Plan",
@@ -313,10 +321,10 @@
   },
 {
     
-    "model": "todo.playlist.track",
+    "model": "todo.track",
     "pk": "27",
     "fields":{
-      "playlist": 1,
+      "playlist": "1",
       "rank": "27",
       "youtube_id": "RgbKKZWZuQo",
       "artist_name": "Stooshe",
@@ -325,10 +333,10 @@
   },
 {
     
-    "model": "todo.playlist.track",
+    "model": "todo.track",
     "pk": "28",
     "fields":{
-      "playlist": 1,
+      "playlist": "1",
       "rank": "28",
       "youtube_id": "SHO3dE-IDWk",
       "artist_name": "Calvin Harris",
@@ -337,10 +345,10 @@
   },
 {
     
-    "model": "todo.playlist.track",
+    "model": "todo.track",
     "pk": "29",
     "fields":{
-      "playlist": 1,
+      "playlist": "1",
       "rank": "29",
       "youtube_id": "FOrLNHbEzMg",
       "artist_name": "Kanye West",
@@ -349,10 +357,10 @@
   },
 {
     
-    "model": "todo.playlist.track",
+    "model": "todo.track",
     "pk": "30",
     "fields":{
-      "playlist": 1,
+      "playlist": "1",
       "rank": "30",
       "youtube_id": "jubKVp_hpE0",
       "artist_name": "Angel",
@@ -361,10 +369,10 @@
   },
 {
     
-    "model": "todo.playlist.track",
+    "model": "todo.track",
     "pk": "31",
     "fields":{
-      "playlist": 1,
+      "playlist": "1",
       "rank": "31",
       "youtube_id": "oABEGc8Dus0",
       "artist_name": "Rudimental",
@@ -373,10 +381,10 @@
   },
 {
     
-    "model": "todo.playlist.track",
+    "model": "todo.track",
     "pk": "32",
     "fields":{
-      "playlist": 1,
+      "playlist": "1",
       "rank": "32",
       "youtube_id": "0NFV8dHrZYM",
       "artist_name": "Elbow",
@@ -385,10 +393,10 @@
   },
 {
     
-    "model": "todo.playlist.track",
+    "model": "todo.track",
     "pk": "33",
     "fields":{
-      "playlist": 1,
+      "playlist": "1",
       "rank": "33",
       "youtube_id": "vdrqA93sW-8",
       "artist_name": "Nicki Minaj",
@@ -397,10 +405,10 @@
   },
 {
     
-    "model": "todo.playlist.track",
+    "model": "todo.track",
     "pk": "34",
     "fields":{
-      "playlist": 1,
+      "playlist": "1",
       "rank": "34",
       "youtube_id": "TDj3sorWXbE",
       "artist_name": "Coldplay &amp; Rihanna",
@@ -409,10 +417,10 @@
   },
 {
     
-    "model": "todo.playlist.track",
+    "model": "todo.track",
     "pk": "35",
     "fields":{
-      "playlist": 1,
+      "playlist": "1",
       "rank": "35",
       "youtube_id": "fWNaR-rxAic",
       "artist_name": "Carly Rae Jepsen",
@@ -421,10 +429,10 @@
   },
 {
     
-    "model": "todo.playlist.track",
+    "model": "todo.track",
     "pk": "36",
     "fields":{
-      "playlist": 1,
+      "playlist": "1",
       "rank": "36",
       "youtube_id": "ke7LGK3UhxA",
       "artist_name": "Plan B",
@@ -433,10 +441,10 @@
   },
 {
     
-    "model": "todo.playlist.track",
+    "model": "todo.track",
     "pk": "37",
     "fields":{
-      "playlist": 1,
+      "playlist": "1",
       "rank": "37",
       "youtube_id": "9bZkp7q19f0",
       "artist_name": "PSY",
@@ -445,10 +453,10 @@
   },
 {
     
-    "model": "todo.playlist.track",
+    "model": "todo.track",
     "pk": "38",
     "fields":{
-      "playlist": 1,
+      "playlist": "1",
       "rank": "38",
       "youtube_id": "OwP6U0LRzQM",
       "artist_name": "Conor Maynard",
@@ -457,10 +465,10 @@
   },
 {
     
-    "model": "todo.playlist.track",
+    "model": "todo.track",
     "pk": "39",
     "fields":{
-      "playlist": 1,
+      "playlist": "1",
       "rank": "39",
       "youtube_id": "aIhgVhTmrks",
       "artist_name": "Professor Green",
@@ -469,10 +477,10 @@
   },
 {
     
-    "model": "todo.playlist.track",
+    "model": "todo.track",
     "pk": "40",
     "fields":{
-      "playlist": 1,
+      "playlist": "1",
       "rank": "40",
       "youtube_id": "zYXjLbMZFmo",
       "artist_name": "Alex Clare",
