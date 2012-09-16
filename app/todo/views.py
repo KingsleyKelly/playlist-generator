@@ -21,9 +21,8 @@ def index(request):
       tracks = playlist.tracks_set.all()
       youtube_ids = [track.youtube_id for track in tracks]
       json_youtube_ids = simplejson.dumps(youtube_ids)
-      return render(request, 'todo.html', 
-                              {'tracks': json_youtube_ids,
-                               'artists_with_tracks': tracks})      
+      return HttpResponse(request, {'tracks': json_youtube_ids,
+                              'artists_with_tracks': tracks})      
 
 
         

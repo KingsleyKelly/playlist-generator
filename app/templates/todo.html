@@ -96,7 +96,7 @@
             type: $(this).attr('method'),
             url: $(this).attr('action'),
             success: function(print_playlist) {
-            $('playlist').html(print_playlist);
+            $('playlist').html(response);
             }
           });
           return false;
