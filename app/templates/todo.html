@@ -19,7 +19,7 @@
         player = new YT.Player('player', {
           height: '585',
           width: '960',
-          videoId: 'HL3DZ-YDSfw',
+          videoId: videos[videoNumber],
           events: {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange
@@ -105,7 +105,7 @@
 
   
 </script>
-      }
+      
     </script>
 
   </head>
@@ -125,6 +125,7 @@
       <form id="select_playlist">
         <select>
           <option>Placeholder</option>
+          <option>Top40</option>
         </select>
       </form>
     </div>
