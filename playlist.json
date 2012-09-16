@@ -1,6 +1,5 @@
 {
   "model": "todo.playlist",
-  "pk": "1",
   "fields":{
     "name": "Top40"
   }
