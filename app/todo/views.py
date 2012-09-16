@@ -10,9 +10,8 @@ from django.utils import simplejson
 def index(request):
     if not request.is_ajax():
       playlist = Playlist.objects.get(pk=1)
-      tracks = playlist.track_set.all()
+      tracks = playlist.track_set.reverse()
       youtube_ids = [track.youtube_id for track in tracks]
-      youtube_ids.reverse()
       json_youtube_ids = simplejson.dumps(youtube_ids)
       return render(request, 'todo.html', 
                               {'tracks': json_youtube_ids,
