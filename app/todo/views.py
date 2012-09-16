@@ -10,7 +10,7 @@ from django.utils import simplejson
 def index(request):
     if not request.is_ajax():
       playlist = Playlist.objects.get(pk=1)
-      tracks = playlist.tracks_set.all()
+      tracks = playlist.track_set.all()
       youtube_ids = [track.youtube_id for track in tracks]
       json_youtube_ids = simplejson.dumps(youtube_ids)
       return render(request, 'todo.html', 
@@ -18,7 +18,7 @@ def index(request):
                                'artists_with_tracks': tracks})
     else:
       playlist = Playlist.objects.get(name=request.POST['name'])
-      tracks = playlist.tracks_set.all()
+      tracks = playlist.track_set.all()
       youtube_ids = [track.youtube_id for track in tracks]
       json_youtube_ids = simplejson.dumps(youtube_ids)
       return HttpResponse(request, {'tracks': json_youtube_ids,
