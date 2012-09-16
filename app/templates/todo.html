@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
     <script language='JavaScript'>
     
     var playerTag = document.createElement('script');
@@ -87,8 +88,23 @@
         }
       }
 
-      function loadPlaylist(){
-        
+      
+      $(document).ready(function() {
+        $('select_playlist').submit(function(){
+          $.ajax({
+            data: $(this).serialize(),
+            type: $(this).attr('method'),
+            url: $(this).attr('action'),
+            success: function(print_playlist) {
+            $('playlist').html(print_playlist);
+            }
+          });
+          return false;
+        });
+      });
+
+  
+</script>
       }
     </script>
 
@@ -105,6 +121,14 @@
       <form>
         <input type="checkbox" onclick="autoRepeat();">Repeat
       </form>
+    <div>
+      <form id="select_playlist">
+        <select>
+          <option>Placeholder</option>
+        </select>
+      </form>
+    </div>
+
     <div id="playlist">
       <table>
 

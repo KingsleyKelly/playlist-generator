@@ -8,13 +8,22 @@ from django.utils import simplejson
 
 @csrf_protect
 def index(request):
-    playlist = Playlist.objects.get(pk=1)
-    tracks = playlist.tracks_set.all()
-    youtube_ids = [track.youtube_id for track in tracks]
-    json_youtube_ids = simplejson.dumps(youtube_ids)
-    return render(request, 'todo.html', 
-                            {'tracks': json_youtube_ids,
-                             'artists_with_tracks': tracks})
+    if not request.is_ajax():
+      playlist = Playlist.objects.get(pk=1)
+      tracks = playlist.tracks_set.all()
+      youtube_ids = [track.youtube_id for track in tracks]
+      json_youtube_ids = simplejson.dumps(youtube_ids)
+      return render(request, 'todo.html', 
+                              {'tracks': json_youtube_ids,
+                               'artists_with_tracks': tracks})
+    else:
+      playlist = Playlist.objects.get(name=request.POST['name'])
+      tracks = playlist.tracks_set.all()
+      youtube_ids = [track.youtube_id for track in tracks]
+      json_youtube_ids = simplejson.dumps(youtube_ids)
+      return render(request, 'todo.html', 
+                              {'tracks': json_youtube_ids,
+                               'artists_with_tracks': tracks})      
 
 
         
