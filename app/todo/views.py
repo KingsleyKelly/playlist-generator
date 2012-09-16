@@ -12,7 +12,7 @@ def index(request):
       playlist = Playlist.objects.get(pk=1)
       tracks = playlist.track_set.all()
       youtube_ids = [track.youtube_id for track in tracks]
-      tracks = tracks.reverse()
+      tracks.reverse()
       json_youtube_ids = simplejson.dumps(youtube_ids)
       return render(request, 'todo.html', 
                               {'tracks': json_youtube_ids,
