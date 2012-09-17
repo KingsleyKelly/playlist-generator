@@ -93,15 +93,15 @@
       $(document).ready(function() {
         $('#select_playlist option:selected')(function(){
 
-          var playlist_text = ('#select_playlist option:selected').text().serialize();
+          // var playlist_text = ('#select_playlist option:selected').text().serialize();
             
           
           
-            $.ajax(
-              data: {name: playlist_text},
-              type: $(this).attr('POST'),
-              url: $(this).attr('http://fathomless-garden-4884.herokuapp.com/'),
-              success: function() {
+          //   $.ajax(
+          //     data: {name: playlist_text},
+          //     type: $(this).attr('POST'),
+          //     url: $(this).attr('http://fathomless-garden-4884.herokuapp.com/'),
+          //     success: function() {
               $('#playlist').html('<table>
 
                 <td>
@@ -113,7 +113,7 @@
             }
           
         });
-      });
+      // });
 
   
     </script>
