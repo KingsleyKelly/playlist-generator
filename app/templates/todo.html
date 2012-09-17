@@ -102,7 +102,7 @@
           //     type: $(this).attr('POST'),
           //     url: $(this).attr('http://fathomless-garden-4884.herokuapp.com/'),
           //     success: function() {
-              $('#playlist').html('<table>
+              $('playlist').html('<table>
 
                 <td>
                 {% for track_info in artists_with_tracks %}
@@ -110,7 +110,7 @@
                 {% endfor %}
                 <td>
               </table>');
-            }
+            // }
           
         });
       // });
