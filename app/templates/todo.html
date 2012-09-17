@@ -93,18 +93,19 @@
       $(document).ready(function() {
         $('#select_playlist option:selected').text()(function(){
           
-            data: $(this).serialize(),
-            type: $(this).attr('POST'),
-            url: $(this).attr('/'),
-            success: function() {
-            $('#playlist').html('<table>
+            $.post(
+              data: $(this).serialize(),
+              type: $(this).attr('POST'),
+              url: $(this).attr('/'),
+              success: function() {
+              $('#playlist').html('<table>
 
-        <td>
-        {% for track_info in artists_with_tracks %}
-          <tr>{{track_info.rank}}. {{ track_info.artist_name|safe }} : {{ track_info.track_name|safe}} <button onclick="playButton({{track_info.rank}});">Play</button></tr></br>
-        {% endfor %}
-        <td>
-      </table>');
+                <td>
+                {% for track_info in artists_with_tracks %}
+                  <tr>{{track_info.rank}}. {{ track_info.artist_name|safe }} : {{ track_info.track_name|safe}} <button onclick="playButton({{track_info.rank}});">Play</button></tr></br>
+                {% endfor %}
+                <td>
+              </table>');
             }
           
         });
