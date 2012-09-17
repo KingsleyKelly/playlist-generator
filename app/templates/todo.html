@@ -87,15 +87,15 @@
           repeat = true;
         }
       }
-
       
+
       $(document).ready(function() {
-        $('select_playlist').submit(function(){
+        $('#select_playlist option:selected').text()(function(){
           $.ajax({
             data: $(this).serialize(),
-            type: $(this).attr('method'),
-            url: $(this).attr('action'),
-            success: function(print_playlist) {
+            type: $(this).attr('POST'),
+            url: $(this).attr('/'),
+            success: function() {
             $('playlist').html(response);
             }
           });
@@ -122,7 +122,7 @@
         <input type="checkbox" onclick="autoRepeat();">Repeat
       </form>
     <div>
-      <form id="select_playlist">
+      <form id="select_playlist" action="POST">
         <select>
           <option>Placeholder</option>
           <option>Top40</option>

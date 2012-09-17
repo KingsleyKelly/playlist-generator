@@ -8,7 +8,7 @@ from django.utils import simplejson
 
 @csrf_protect
 def index(request):
-    if not request.is_ajax():
+    if not request.POST:
       playlist = Playlist.objects.get(pk=1)
       tracks = playlist.track_set.all().order_by('-rank').reverse()
       youtube_ids = [track.youtube_id for track in tracks]
@@ -21,8 +21,8 @@ def index(request):
       tracks = playlist.track_set.all()
       youtube_ids = [track.youtube_id for track in tracks]
       json_youtube_ids = simplejson.dumps(youtube_ids)
-      return HttpResponse(request, {'tracks': json_youtube_ids,
-                              'artists_with_tracks': tracks})      
+      return HttpResponse({'tracks': json_youtube_ids,
+                              'artists_with_tracks': tracks}, mimetype="JavaScript")      
 
 
         
