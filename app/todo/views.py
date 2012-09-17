@@ -19,12 +19,12 @@ def index(request):
     else:
       try:
         playlist = Playlist.objects.get(name=request.POST['data'])
-      tracks = playlist.track_set.all()
-      youtube_ids = [track.youtube_id for track in tracks]
-      json_youtube_ids = simplejson.dumps(youtube_ids)
-      return HttpResponse({'tracks': json_youtube_ids,
-                           'artists_with_tracks': tracks}, 
-                            mimetype="application/javascript")      
+        tracks = playlist.track_set.all()
+        youtube_ids = [track.youtube_id for track in tracks]
+        json_youtube_ids = simplejson.dumps(youtube_ids)
+        return HttpResponse({'tracks': json_youtube_ids,
+                             'artists_with_tracks': tracks}, 
+                              mimetype="application/javascript")      
 
 
         
