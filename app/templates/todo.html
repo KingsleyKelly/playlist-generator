@@ -92,7 +92,7 @@
       <script>
       $(document).ready(function() {
         $('#select_playlist option:selected').text()(function(){
-          $.ajax({
+          
             data: $(this).serialize(),
             type: $(this).attr('POST'),
             url: $(this).attr('/'),
@@ -106,8 +106,7 @@
         <td>
       </table>');
             }
-          });
-          return false;
+          
         });
       });
 
