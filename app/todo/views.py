@@ -18,7 +18,7 @@ def index(request):
                                'artists_with_tracks': tracks})
     else:
       
-      playlist = Playlist.objects.get(name=request.POST['data'])
+      playlist = Playlist.objects.get(name=request.POST['name'])
       tracks = playlist.track_set.all()
       youtube_ids = [track.youtube_id for track in tracks]
       json_youtube_ids = simplejson.dumps(youtube_ids)
