@@ -138,14 +138,15 @@
         //       type: $(this).attr('POST'),
         //       url: $(this).attr('http://fathomless-garden-4884.herokuapp.com/'),
         //       success: function() {
-              $("playlist").append('<table>
+              $("playlist").append("Hello");
+              //   '<table>
 
-                <td>
-                {% for track_info in artists_with_tracks %}
-                  <tr>{{track_info.rank}}. {{ track_info.artist_name|safe }} : {{ track_info.track_name|safe}} <button onclick="playButton({{track_info.rank}});">Play</button></tr></br>
-                {% endfor %}
-                <td>
-              </table>');
+              //   <td>
+              //   {% for track_info in artists_with_tracks %}
+              //     <tr>{{track_info.rank}}. {{ track_info.artist_name|safe }} : {{ track_info.track_name|safe}} <button onclick="playButton({{track_info.rank}});">Play</button></tr></br>
+              //   {% endfor %}
+              //   <td>
+              // </table>');
             // }
           
         // });
