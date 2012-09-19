@@ -114,7 +114,10 @@
         </select>
       </form>
     </div>
-
+      <p>I would like to say: </p>
+<script>
+  $("p").append("<strong>Hello</strong>");
+</script>
     <div id="playlist">
       <!-- <table>
 
@@ -138,18 +141,18 @@
         //       type: $(this).attr('POST'),
         //       url: $(this).attr('http://fathomless-garden-4884.herokuapp.com/'),
         //       success: function() {
-              $("div playlist").append("hello");
-            //     '<table>
+              $("playlist").append("Hello");
+              //   '<table>
 
-            //     <td>
-            //     {% for track_info in artists_with_tracks %}
-            //       <tr>{{track_info.rank}}. {{ track_info.artist_name|safe }} : {{ track_info.track_name|safe}} <button onclick="playButton({{track_info.rank}});">Play</button></tr></br>
-            //     {% endfor %}
-            //     <td>
-            //   </table>');
-            // };
+              //   <td>
+              //   {% for track_info in artists_with_tracks %}
+              //     <tr>{{track_info.rank}}. {{ track_info.artist_name|safe }} : {{ track_info.track_name|safe}} <button onclick="playButton({{track_info.rank}});">Play</button></tr></br>
+              //   {% endfor %}
+              //   <td>
+              // </table>');
+            // }
           
-      //   });
+        // });
       // });
 
   
