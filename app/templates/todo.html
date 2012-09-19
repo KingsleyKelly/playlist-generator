@@ -125,14 +125,14 @@
         <td>
       </table> -->
     </div>
-     <script>$("#playlist").html('<div id="playlist"><table>
+     <script>$("#playlist").html('<div id="playlist">Hello</div>');</script>
 
-                <td>
+       <!--          <td>
                 {% for track_info in artists_with_tracks %}
                   <tr>{{track_info.rank}}. {{ track_info.artist_name|safe }} : {{ track_info.track_name|safe}} <button onclick="playButton({{track_info.rank}});">Play</button></tr></br>
                 {% endfor %}
                 <td>
-              </table></div>');
+              </table></div>'
       // $(document).ready(function() {
         // $('#select_playlist option:selected')(function(){
 
@@ -157,8 +157,8 @@
             // }
           
         // });
-      // });
-      </script>
+      // }); -->
+      
 
   
     
