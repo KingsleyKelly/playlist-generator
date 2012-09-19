@@ -125,8 +125,10 @@
         <td>
       </table> -->
     </div>
-     <script>$("#playlist").html('<div id="playlist"><table><td>
-      hello<td></table></div>');</script>
+
+     <script>var x = '<div id="playlist"><table><td>hello<td></table></div>'
+     $("#playlist").html(x);
+     </script>
 
        <!--          <td>
                 {% for track_info in artists_with_tracks %}
