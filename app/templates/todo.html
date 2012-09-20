@@ -95,7 +95,7 @@
 
   </head>
   <body>
-    <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+
     <div id="player"></div>
     <div id="buttons">
       <button onclick="resetVideos();">Reset</button>
@@ -122,7 +122,7 @@
         {% for track_info in artists_with_tracks %}
           <tr>{{track_info.rank}}. {{ track_info.artist_name|safe }} : {{ track_info.track_name|safe}} <button onclick="playButton({{track_info.rank}});">Play</button></tr></br>
         {% endfor %}
-        <td>
+        </td>
       </table>
     </div>
 
