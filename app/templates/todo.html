@@ -88,7 +88,14 @@
         }
       }
       
+      function send_request(){
+        $.get(location.href, function(data){
+          $("#playlist").html("hello")
+        })
+      }
       </script>
+
+
      
       
 
@@ -114,7 +121,9 @@
         </select>
       </form>
     </div>
-
+    <div>
+      <button onclick="send_request()">WOAH</button>
+    </div>
     <div id="playlist">
       <table>
 
