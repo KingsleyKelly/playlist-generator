@@ -5,8 +5,6 @@ from django.views.decorators.csrf import csrf_protect
 from django.shortcuts import render_to_response, render
 from django.template import defaultfilters
 from django.utils import simplejson
-from django.views.generic.detail import BaseDetailView, \
-    SingleObjectTemplateResponseMixins
 
 @csrf_protect
 def index(request):
