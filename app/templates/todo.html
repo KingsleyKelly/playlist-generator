@@ -91,7 +91,7 @@
       
       function send_request(){
         $.get(location.href, function(data){
-          $("#playlist").html('<table>{% for track_info in artists_with_tracks %} <td>uhhx{</td>% endfor %}</table>')
+          $("#playlist").html('<table>{% for track_info in artists_with_tracks %} <td>uhhx</td>{% endfor %}</table>')
         })
       }
       </script>
