@@ -92,7 +92,7 @@
       
       function send_request(){
         $.get(location.href, function(data){
-          $("#playlist").html('<table><td>{% for track_info in artists_with_tracks|safe %} uhhx</td></table>')
+          $("#playlist").html('<table><td>{% for track_info in artists_with_tracks|safe %} uhhx{% endfor %}</td></table>')
         })
       }
       </script>
