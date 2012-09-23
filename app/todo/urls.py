@@ -7,5 +7,4 @@ admin.autodiscover()
 
 urlpatterns = patterns('todo.views',
     url(r'^/?$', 'index', name='index'),
-    url(dajaxice_config.dajaxice_url, include('dajaxice.urls')),
 )
