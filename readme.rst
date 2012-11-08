@@ -1,7 +1,7 @@
-Basic To Do App in Django
-=========================
+Modified todo list in to playlist generator.
+Chance to try out lots of things in Django and use the Youtube api.
+Nice live player with JS.
 
-This is a basic to do app in django. Its meant to be a more complicated hello world for django that utilizes a database.
 
 Getting setup
 -------------
